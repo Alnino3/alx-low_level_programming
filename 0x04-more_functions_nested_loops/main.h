@@ -14,5 +14,4 @@ void print_triangle(int size);
 int _putchar(char c);
 
 #endif
-Footer
-© 2023 GitHub, Inc.
+
