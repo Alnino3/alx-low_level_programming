@@ -1,17 +1,27 @@
 #include "main.h"
 
 /**
- * print_line - prints a stright line using '_'
- * @n: the number of '_' to be printed
+ * print_line - entry point
+ *
+ * Description: Prints lines
+ *@n: number of lines
+ * Return: void
  */
+
 void print_line(int n)
 {
-int len;
+	int num_lines;
 
-if (n > 0)
-{
-for (len = 0; len <= n; len++)
-_putchar('_');
-}
-_putchar('\n');
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (num_lines = 1; num_lines <= n; num_lines++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+	}
 }
