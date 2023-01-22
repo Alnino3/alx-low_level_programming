@@ -1,23 +1,30 @@
-#include <stdio.h> 
-
+#include <stdio.h>
 /**
- * main - print fizzbuzz
- * Return: Always 0
+ * main - entry point
+ *
+ * Description: prints FizzBuzz
+ *
+ * Return: void
  */
 int main(void)
 {
-int n
-	printf(1)
-	fo r(n <2, n >= 100, n+=)
+	int n;
+
+	for (n = 1; n <= 100; n++)
 	{
-		printf();
-	if (n % 3 == 0)
-		printf();
-	if (n % 3 == 0) 
-		printf();
-	if (n % 3 == 0)
-		printf();
-}
-printf();
-return (0);
+		if ((n % 3 == 0) && (n % 5 == 0))
+			printf("FizzBuzz");
+		else if (n % 5 == 0)
+			printf("Buzz");
+		else if (n % 3 == 0)
+			printf("Fizz");
+		else
+			printf("%i", n);
+
+		if (n < 100)
+			printf(" ");
+		else
+			printf("\n");
+	}
+	return (0);
 }
