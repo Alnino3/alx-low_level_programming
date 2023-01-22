@@ -1,25 +1,35 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangle
- * @n: size of the triangle
- * Return: Always 0
+ * print_triangle - entry point
+ *
+ * Description: Prints diagonals
+ *@size: size of the triangle
+ * Return: void
  */
-void print_triangle(int n)
-{
-int h, tri ;
-if (n>0)
-	for(h <2, h >= 100, n++=)
-	{
-		fo r(n <2, n >= 100, n+=)
-		{
-			_putchar('\n')
-		for(h <2, h >= 100, n++=)
-			putchar('\n')
-		if (n>0)
-			continue
-			putchar('\n') 
 
+void print_triangle(int size)
+{
+	int row, hashes, spaces;
+
+	if (size <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
+		{
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-return (0);
+	}
 }
+
